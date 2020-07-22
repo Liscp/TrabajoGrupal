@@ -1,0 +1,38 @@
+    <form [formGroup]="loginData"  class="login-form">
+      <p class="login-text">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-lock fa-stack-1x"></i>
+        </span>
+      </p>
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+          Usuario
+        </label>
+        <input formControlName='email' placeholder="Email" class="login-username" id="username" type="text" placeholder="Username">
+      </div>
+      <div class="mb-6">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+          Contraseña
+        </label>
+        <input formControlName='password'  class="login-password" id="password" type="password" placeholder="(OjO)">
+        <p class="text-red-500 text-xs italic">Porfavor elija una contraseña.</p>
+      </div>
+      <div class="flex items-center justify-between">
+        <button  class="login-submit" type="submit" (click)="login()" (keypress)="login()" >
+          Iniciar Sesión
+        </button>
+        <a class="login-forgot-pass" href="#">
+          Olvido Contraseña?
+        </a>
+      </div>
+    </form>
+    <p class="text-center text-gray-500 text-xs">
+      &copy;2020 Acme Corp. All rights reserved.
+    </p>
+<div class="underlay-photo"></div>
+<div class="underlay-black"></div> 
+<div>
+
+</div>
+
